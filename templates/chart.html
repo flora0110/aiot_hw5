@@ -17,15 +17,6 @@
 	<script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
 	<script>
     var data = {{ u|tojson }};
-    //print("aaa");
-
-    console.log("a");
-
-    console.log("b");
-    console.log(data);
-    console.log(data[0]);
-    console.log(data[0][3]);
-
     lights = [];
     humis=[];
     temps = [];
@@ -45,10 +36,6 @@
       }
       time.push(data[i][1]);
     }
-    console.log(lights);
-  //highcharsinit();
-	//function highcharsinit(){
-    console.log("eeeee");
     $(document).ready(function () {
 		$('#container').highcharts({
 			title: {
@@ -74,7 +61,7 @@
 				}
 			},
 			//圖表的資料
-			
+
 			series: [{
 				name: 'Sensor-lights',
 				data: lights
@@ -92,58 +79,12 @@
 			////////////
 		});
     });
-    console.log("dddddd");
-	//}
-
-
-/*
-	$(function () {
-		$.ajax({
-			//url: 'GetData.php',//連接的URL
-			data: "{}",//夾帶的參數
-			dataType: 'json', //資料格式
-			success: function(data)	//傳送成功的function
-				{
-					lights = [];
-					humis=[];
-					temps = [];
-					time = [];
-
-					for (var i =  0; i < data.length; i++)
-					{
-						if(parseInt(data[i][5])==0){
-							lights.push({y:parseInt(data[i][2]), color: '#FF0000' });
-							humis.push({y:parseInt(data[i][3]), color: '#FF0000' });
-							temps.push({y:parseInt(data[i][4]), color: '#FF0000' });
-						}else{
-							lights.push({y:parseInt(data[i][2]), color: '#00FF00' });
-							humis.push({y:parseInt(data[i][3]), color: '#00FF00' });
-							temps.push({y:parseInt(data[i][4]), color: '#00FF00' });
-						}
-						time.push(data[i][1]);
-					}
-					highcharsinit();
-					} //success end
-
-			}); //ajax end
-
-		}); //function end*/
 	</script>
 </head>
 
 <body>
 	<div class="container">
 		<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto">Insert Highchart Here</div>
-
-		<!-- <button class = "btn btn-warning " id = "GetData">GetData</button> -->
-		<!--
-		<button class = "btn btn-dangerous"id = "trigger">Trigger EA</button>
-		<button class = "btn btn-info"id = "trigger">Trigger NB</button>
-		<button class = "btn btn-link"id = "Random">Random</button>
-		-->
-
-
-
 	</div>
 
 </body>
