@@ -11,4 +11,5 @@
 2. 使用jQuery繪製圖表
 ## 結果
 `python app.py`
-![image](https://github.com/flora0110/aiot_hw5/blob/main/aiot_chart.jpg)
+![image](https://github.com/flora0110/aiot_hw5/blob/main/noAI.jpg)
+![image](https://github.com/flora0110/aiot_hw5/blob/main/AI.jpg)
