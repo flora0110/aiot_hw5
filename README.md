@@ -9,6 +9,7 @@
 ## 3. 繪製圖表
 1. 用jinja2 把資料讀進來
 2. 使用jQuery繪製圖表
+## 4. 使用model處理資料
 ## 結果
 `python app.py`
 ![image](https://github.com/flora0110/aiot_hw5/blob/main/noAI.jpg)
