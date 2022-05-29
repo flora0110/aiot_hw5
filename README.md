@@ -10,6 +10,10 @@
 1. 用jinja2 把資料讀進來
 2. 使用jQuery繪製圖表
 ## 4. 使用model處理資料
+1. 載入模型
+2. 把資料庫的資料讀書來
+3. 把資料丟入模型
+4. 將資料傳給
 ## 結果
 `python app.py`
 ![image](https://github.com/flora0110/aiot_hw5/blob/main/noAI.jpg)
